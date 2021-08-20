@@ -1,0 +1,52 @@
+/*HEADER SECTION*/
+header {
+  background-image: url("../images/bg.png");
+  background-size: cover;
+  height: 800px;
+}
+header img {
+  width: 100px;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+}
+/*EXPLORE SECTION*/
+.explore-section {
+  margin-left: 60px;
+}
+a {
+  font-family: helvetica;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  margin-right: 20px;
+  font-weight: lighter;
+}
+/*MENU SECTION*/
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu button {
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 30px;
+  color: white;
+  width: 120px;
+  height: 2rem;
+  background-color: transparent;
+  border: none;
+}
+.menu button:hover {
+  background-color: #ffffff1f;
+}
+.menu i {
+  color: white;
+}
+.menu .icon-globe {
+  width: 60px;
+}
