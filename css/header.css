@@ -7,12 +7,14 @@ header {
 header img {
   width: 100px;
 }
+/*NAV WRAPPER*/
 nav {
+  positon: relative;
   display: flex;
   justify-content: center;
   justify-content: space-between;
   align-items: center;
-  padding: 0 80px;
+  padding: 20px 80px 20px 80px;
 }
 /*EXPLORE SECTION*/
 .explore-section {
@@ -34,10 +36,10 @@ a {
 .menu button {
   cursor: pointer;
   font-weight: bold;
-  border-radius: 30px;
+  border-radius: 40px;
   color: white;
   width: 120px;
-  height: 2rem;
+  height: 2.5rem;
   background-color: transparent;
   border: none;
 }
@@ -47,6 +49,26 @@ a {
 .menu i {
   color: white;
 }
+.icon-menu {
+  display: flex;
+}
+.icon-menu i {
+  color: #222222;
+}
 .menu .icon-globe {
   width: 60px;
+}
+.menu .icon-menu {
+  width: 80px;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.menu .icon-menu:hover {
+  background-color: white;
+}
+.icon-menu img {
+  width: 30px;
+  margin-left: 2px;
 }
