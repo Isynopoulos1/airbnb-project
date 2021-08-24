@@ -1,23 +1,29 @@
 /*HEADER SECTION*/
 header {
+  position: relative;
   background-image: url("../images/bg.png");
   background-size: cover;
   height: 800px;
 }
-header img {
+.branding img {
   width: 100px;
+}
+.logo-responsive img {
+  width: 100px;
+  display: none;
 }
 /*NAV WRAPPER*/
 nav {
-  positon: relative;
+  position: fixed;
   display: flex;
-  justify-content: center;
+  width: calc(100% - 160px);
   justify-content: space-between;
   align-items: center;
-  padding: 20px 80px 20px 80px;
+  padding: 20px 80px;
 }
 /*EXPLORE SECTION*/
 .explore-section {
+  position: relative;
   margin-left: 60px;
 }
 a {
@@ -71,4 +77,30 @@ a {
 .icon-menu img {
   width: 30px;
   margin-left: 2px;
+}
+/*RESPONSIVE SECTION*/
+@media (max-width: 950px) {
+  nav {
+    width: calc(100% - 80px);
+    padding: 20px 40px;
+  }
+  .explore-section {
+    position: absolute;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    width: calc(100% - 80px);
+    top: 100px;
+  }
+  .explore-section a {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .branding {
+    display: none;
+  }
+  .logo-responsive img {
+    width: 40px;
+    display: flex;
+  }
 }
