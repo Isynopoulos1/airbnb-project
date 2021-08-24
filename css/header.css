@@ -1,9 +1,11 @@
 /*HEADER SECTION*/
-header {
-  position: relative;
+body {
   background-image: url("../images/bg.png");
   background-size: cover;
-  height: 800px;
+}
+header {
+  position: relative;
+  height: 100px;
 }
 .branding img {
   width: 100px;
@@ -80,6 +82,9 @@ a {
 }
 /*RESPONSIVE SECTION*/
 @media (max-width: 950px) {
+  header {
+    height: 200px;
+  }
   nav {
     width: calc(100% - 80px);
     padding: 20px 40px;
