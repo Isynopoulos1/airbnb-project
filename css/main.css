@@ -6,9 +6,11 @@ main {
 }
 /*DATA PANEL SECTION*/
 .data-panel-bounds {
+  position: relative;
+  overflow: hidden;
   display: flex;
   justify-content: center;
-  width: 850px;
+  align-items: center;
   height: 30px;
   background-color: white;
   border-radius: 32px;
@@ -17,6 +19,7 @@ main {
   padding-bottom: 20px;
 }
 .data-panel-bounds h3 {
+  text-align: left;
   font-family: helvetica;
   font-size: 12px;
   font-weight: bold;
@@ -25,41 +28,120 @@ main {
 input {
   border: none;
   margin-top: 5px;
+  background-color: transparent;
 }
+input:focus {
+  outline: none;
+}
+/*BORDERS*/
+.border {
+  position: absolute;
+  height: 20px;
+  right: 0;
+  border-right: 1px solid lightgray;
+}
+.input-box:hover .border {
+  display: none;
+}
+/*UBICACIÓN SECTION*/
 .ubicacion {
-  border-right: 1px solid lightgray;
-  width: 199.72px;
-  margin-left: 15px;
-}
-.llegada {
-  border-right: 1px solid lightgray;
-  width: 199.22px;
-  margin-left: 15px;
-}
-.salida {
-  border-right: 1px solid lightgray;
-  width: 199.22px;
-  margin-left: 15px;
-}
-.huespedes {
-  width: 240.83px;
-  margin-left: 15px;
-}
-/*SEARCH ICON*/
-.search-button {
+  position: relative;
   display: flex;
   align-items: center;
 }
-.search-button button {
-  margin-left: 160px;
-  margin-top: -45px;
+.ubicacion-data {
+  padding: 17px 17px;
+  cursor: pointer;
+}
+.ubicacion button {
+  border-radius: 32px;
+  border: none;
+  background-color: white;
+}
+.ubicacion button:hover {
+  border-radius: 32px;
+  border: none;
+  background-color: #dddddd70;
+}
+/*LLEGADA SECTION*/
+.llegada {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.llegada-data {
+  padding: 17px 17px;
+  cursor: pointer;
+}
+.llegada button {
+  border-radius: 32px;
+  border: none;
+  background-color: white;
+}
+.llegada button:hover {
+  border-radius: 32px;
+  border: none;
+  background-color: #dddddd70;
+}
+/*SALIDA SECTION*/
+.salida {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.salida-data {
+  padding: 17px 17px;
+  cursor: pointer;
+}
+.salida button {
+  border-radius: 32px;
+  border: none;
+  background-color: white;
+}
+.salida button:hover {
+  border-radius: 32px;
+  border: none;
+  background-color: #dddddd70;
+}
+
+/*HUESPEDES SECTION*/
+.huespedes {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 70px;
+  background-color: white;
+  border-radius: 32px;
+}
+.huespedes:hover {
+  background-color: #dddddd70;
+}
+.huespedes:focus-within {
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 20%) -10px 1px 32px;
+}
+.huespedes-data {
+  cursor: pointer;
+  padding-left: 24px;
+}
+/*SEARCH ICON*/
+.search-button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 56px;
   width: 56px;
   border: none;
-  border-radius: 32px;
+  border-radius: 100%;
+  margin-right: 10px;
   background-color: #ff3866;
 }
-.search-icon i {
+.search-button:hover {
+  background-color: #e41d56;
+}
+
+.search-button i {
   color: white;
   align-items: center;
 }
