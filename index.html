@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/heading.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
@@ -52,43 +53,53 @@
 
     <main>
       <!--DATA PANEL SECTION-->
-      <div class="data-panel-bounds">
-        <!--UBICACION SECTION-->
-        <div class="ubicacion input-box">
-          <button class="ubicacion-data">
-            <h3>Ubicación</h3>
-            <input placeholder="¿A dónde vas?" type="form" />
-          </button>
-          <span class="border" />
-        </div>
-        <!--LLEGADA SECTION-->
-        <div class="llegada input-box">
-          <button class="llegada-data">
-            <h3>Llegada</h3>
-            <input placeholder="Agrega fechas" type="calendar" />
-          </button>
-          <span class="border" />
-        </div>
-        <!--SALIDA SECTION-->
-        <div class="salida input-box">
-          <button class="salida-data">
-            <h3>Salida</h3>
-            <input placeholder="Agrega fechas" type="calendar" />
-          </button>
-          <span class="border" />
-        </div>
-        <!--HUESPEDES SECTION-->
-        <div class="huespedes input-box">
-          <div class="huespedes-data">
-            <h3>Huéspedes</h3>
-            <input placeholder="¿Cuántos?" type="form" />
+      <form class="data">
+        <div class="data-panel-bounds">
+          <!--UBICACION SECTION-->
+          <div class="ubicacion input-box">
+            <button class="ubicacion-data">
+              <h3>Ubicación</h3>
+              <input placeholder="¿A dónde vas?" type="form" />
+            </button>
+            <span class="border" />
           </div>
-          <button class="search-button">
-            <i class="material-icons-outlined">
-              search
-            </i>
-          </button>
+          <!--LLEGADA SECTION-->
+          <div class="llegada input-box">
+            <button class="llegada-data">
+              <h3>Llegada</h3>
+              <input placeholder="Agrega fechas" type="calendar" />
+            </button>
+            <span class="border" />
+          </div>
+          <!--SALIDA SECTION-->
+          <div class="salida input-box">
+            <button class="salida-data">
+              <h3>Salida</h3>
+              <input placeholder="Agrega fechas" type="calendar" />
+            </button>
+            <span class="border" />
+          </div>
+          <!--HUESPEDES SECTION-->
+          <div
+            class="huespedes input-box
+
+          "
+          >
+            <div class="huespedes-data">
+              <h3>Huéspedes</h3>
+              <input placeholder="¿Cuántos?" type="form" />
+            </div>
+            <button class="search-button">
+              <i class="material-icons-outlined">
+                search
+              </i>
+            </button>
+          </div>
         </div>
+      </form>
+      <div class="heading">
+        <h1>¿No tienes claro a dónde ir? ¡Te hacemos una brújula!</h1>
+        <button class="busqueda"><span class>Búsqueda flexible</span></button>
       </div>
     </main>
     <footer></footer>

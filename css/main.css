@@ -1,9 +1,14 @@
-main {
+form {
   position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
 }
+main {
+  display: flex;
+  flex-direction: column;
+}
+
 /*DATA PANEL SECTION*/
 .data-panel-bounds {
   position: relative;
@@ -63,6 +68,10 @@ input:focus {
   border: none;
   background-color: #dddddd70;
 }
+.ubicacion button:focus-within {
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 20%) -10px 1px 32px;
+}
 /*LLEGADA SECTION*/
 .llegada {
   position: relative;
@@ -83,6 +92,10 @@ input:focus {
   border: none;
   background-color: #dddddd70;
 }
+.llegada button:focus-within {
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 20%) -10px 1px 32px;
+}
 /*SALIDA SECTION*/
 .salida {
   position: relative;
@@ -102,6 +115,10 @@ input:focus {
   border-radius: 32px;
   border: none;
   background-color: #dddddd70;
+}
+.salida button:focus-within {
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 20%) -10px 1px 32px;
 }
 
 /*HUESPEDES SECTION*/
