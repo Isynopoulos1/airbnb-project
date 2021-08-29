@@ -16,7 +16,7 @@ h1 {
   box-shadow: 0px 6px 16px rgb(0 0 0 / 12%);
 }
 button span {
-  background: linear-gradient(#70009c, #ae0286);
+  background: linear-gradient(0.26turn, #70009c, #ae0286);
   -webkit-background-clip: text;
   color: transparent;
   font-size: 18px;
