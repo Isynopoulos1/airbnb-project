@@ -1,34 +1,6 @@
-form {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
 main {
   display: flex;
   flex-direction: column;
-}
-
-/*DATA PANEL SECTION*/
-.data-panel-bounds {
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30px;
-  background-color: white;
-  border-radius: 32px;
-  color: rgb(34, 34, 34);
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-.data-panel-bounds h3 {
-  text-align: left;
-  font-family: helvetica;
-  font-size: 12px;
-  font-weight: bold;
-  color: black;
 }
 input {
   border: none;
@@ -38,94 +10,66 @@ input {
 input:focus {
   outline: none;
 }
-/*BORDERS*/
+/*DATA PANEL SECTION*/
+.data {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.data-panel-bounds {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 790px;
+  background-color: white;
+  border-radius: 32px;
+  color: rgb(34, 34, 34);
+  padding: 20px 0;
+}
+.data-panel-bounds h3 {
+  text-align: left;
+  font-family: helvetica;
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+}
 .border {
   position: absolute;
   height: 20px;
   right: 0;
   border-right: 1px solid lightgray;
 }
+.input-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 25%;
+}
 .input-box:hover .border {
   display: none;
 }
-/*UBICACIÓN SECTION*/
-.ubicacion {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-.ubicacion-data {
-  padding: 17px 17px;
-  cursor: pointer;
-}
-.ubicacion button {
+.input-box button {
   border-radius: 32px;
   border: none;
   background-color: white;
+  padding: 17px;
+  cursor: pointer;
 }
-.ubicacion button:hover {
+.input-box button:hover {
   border-radius: 32px;
   border: none;
   background-color: #dddddd70;
 }
-.ubicacion button:focus-within {
-  background-color: white;
-  box-shadow: rgb(0 0 0 / 20%) -10px 1px 32px;
-}
-/*LLEGADA SECTION*/
-.llegada {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-.llegada-data {
-  padding: 17px 17px;
-  cursor: pointer;
-}
-.llegada button {
-  border-radius: 32px;
-  border: none;
-  background-color: white;
-}
-.llegada button:hover {
-  border-radius: 32px;
-  border: none;
-  background-color: #dddddd70;
-}
-.llegada button:focus-within {
-  background-color: white;
-  box-shadow: rgb(0 0 0 / 20%) -10px 1px 32px;
-}
-/*SALIDA SECTION*/
-.salida {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-.salida-data {
-  padding: 17px 17px;
-  cursor: pointer;
-}
-.salida button {
-  border-radius: 32px;
-  border: none;
-  background-color: white;
-}
-.salida button:hover {
-  border-radius: 32px;
-  border: none;
-  background-color: #dddddd70;
-}
-.salida button:focus-within {
+.input-box button:focus-within {
   background-color: white;
   box-shadow: rgb(0 0 0 / 20%) -10px 1px 32px;
 }
 
 /*HUESPEDES SECTION*/
 .huespedes {
-  position: relative;
-  display: flex;
-  align-items: center;
   height: 70px;
   background-color: white;
   border-radius: 32px;
@@ -141,8 +85,11 @@ input:focus {
   cursor: pointer;
   padding-left: 24px;
 }
+
 /*SEARCH ICON*/
 .search-button {
+  position: absolute;
+  right: 0;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -152,13 +99,20 @@ input:focus {
   border: none;
   border-radius: 100%;
   margin-right: 10px;
-  background-color: #ff3866;
+  background-color: #ff3866 !important;
 }
 .search-button:hover {
-  background-color: #e41d56;
+  background-color: #e41d56 !important;
 }
-
 .search-button i {
   color: white;
   align-items: center;
+}
+
+/*RESPONSIVE SECTION*/
+@media (max-width: 790px) {
+  .data-panel-bounds {
+    width: calc(100% - 24px);
+    margin: 0 12px;
+  }
 }
