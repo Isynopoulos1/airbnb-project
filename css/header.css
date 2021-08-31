@@ -2,6 +2,7 @@
 body {
   background-image: url("../images/bg.png");
   background-size: cover;
+  background-repeat: no-repeat;
 }
 header {
   position: relative;
@@ -15,7 +16,7 @@ header {
   display: none;
 }
 /*NAV WRAPPER*/
-nav {
+.header-container {
   position: fixed;
   display: flex;
   width: calc(100% - 160px);
@@ -85,7 +86,7 @@ a {
   header {
     height: 200px;
   }
-  nav {
+  .header-container {
     width: calc(100% - 80px);
     padding: 20px 40px;
   }

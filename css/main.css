@@ -2,15 +2,45 @@ main {
   display: flex;
   flex-direction: column;
 }
+
 input {
   border: none;
-  margin-top: 5px;
+
   background-color: transparent;
 }
 input:focus {
   outline: none;
 }
+/*MOBILE SEARCH BAR*/
+
+.search-bar {
+  position: relative;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 32px;
+  color: rgb(34, 34, 34);
+  margin: 0 auto;
+  width: calc(100% - 32px);
+  height: 48px;
+}
+.search-bar input {
+  text-align: center;
+}
+.search-bar button {
+  border: none;
+  background-color: white;
+  color: #ff3866;
+}
+/*COLOR INPUT SEARCH BAR*/
+.search-bar input[id^="search"]::-webkit-input-placeholder {
+  color: black;
+  font-weight: 200;
+}
+
 /*DATA PANEL SECTION*/
+
 .data {
   position: relative;
   width: 100%;
@@ -114,5 +144,16 @@ input:focus {
   .data-panel-bounds {
     width: calc(100% - 24px);
     margin: 0 12px;
+  }
+}
+@media (max-width: 750px) {
+  .explore-section {
+    display: none;
+  }
+  .data {
+    display: none;
+  }
+  .search-bar {
+    display: flex;
   }
 }

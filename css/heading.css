@@ -15,11 +15,15 @@ h1 {
   border-radius: 100px;
   box-shadow: 0px 6px 16px rgb(0 0 0 / 12%);
 }
-button span {
+.heading button:hover {
+  cursor: pointer;
+  box-shadow: 0px 6px 16px rgb(0 0 0 / 20%);
+  transition: box-shadow 0.1s ease-in-out;
+}
+.heading button span {
   background: linear-gradient(0.26turn, #70009c, #ae0286);
   -webkit-background-clip: text;
   color: transparent;
   font-size: 18px;
   font-weight: bold;
-  cursor: pointer;
 }
